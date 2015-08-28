@@ -8,6 +8,8 @@ git config --global alias.rb rebase
 git config --global alias.po "push origin"
 git config --global alias.pl "pull origin"
 git config --global alias.pu "pull upstream"
+git config --global alias.pud "pull upstream development"
+git config --global alias.rdf "git ls-files --deleted -z | xargs -0 git rm " #remove deleted files files from git
 git config --global alias.alias "config --get-regexp ^alias\." # This is for list all aliases
 
 echo "List all configured aliases"
