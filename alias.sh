@@ -11,6 +11,8 @@ git config --global alias.pu "pull upstream"
 git config --global alias.pud "pull upstream development"
 git config --global alias.rdf "git ls-files --deleted -z | xargs -0 git rm " #remove deleted files files from git
 git config --global alias.alias "config --get-regexp ^alias\." # This is for list all aliases
+# Cache the credentials for 10 hours the next time you input them
+git config --global alias.cache "config --global credential.helper 'cache --timeout=36000'"
 
 echo "List all configured aliases"
 git alias
